@@ -4,10 +4,13 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "faker>=40.41.0",
+]
 
 [project.scripts]
-dataset-generator = "dataset_generator:main"
+dataset-users = "dataset_generator.dataset_users:main"
+dataset-orders = "dataset_generator.dataset_orders:main"
 
 [build-system]
 requires = ["uv_build>=0.12.21,<0.13.0"]
